@@ -1,0 +1,57 @@
+@0
+# NODE 4
+
+@1
+MOV UP, ACC
+MOV ACC, DOWN
+MOV ACC, DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+^:SAV
+MOV UP, ACC
+
+JEZ IF-0
+SWP
+ADD UP
+MOV 1, RIGHT
+JMP ^
+
+IF-0: MOV UP, NIL
+MOV 0, RIGHT
+SWP
+MOV ACC, DOWN
+MOV 0, ACC
+
+@9
+^: SAV
+MOV LEFT, ACC
+
+JEZ IF-0
+SWP
+ADD 1
+
+JMP ^
+
+IF-0: SWP
+MOV ACC, DOWN
+MOV 0, ACC
+
+@10
