@@ -1,0 +1,45 @@
+@0
+
+
+@1
+^:
+ MOV 0, DOWN
+ MOV UP, ACC
+ JNZ ^
+ MOV 0, DOWN
+ ADD UP
+ JNZ ^
+
+00: ADD UP
+ JEZ 000
+ MOV 0, DOWN
+ JNZ ^
+
+000: MOV 1, DOWN
+ JMP 00
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, RIGHT
+
+@9
+MOV LEFT, DOWN
+
+@10
