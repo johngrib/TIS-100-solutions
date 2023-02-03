@@ -1,4 +1,5 @@
 @0
+## FAST
 #  97 CYCLES
 #   7 NODES
 #  20 INSTR
