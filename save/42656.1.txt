@@ -1,0 +1,49 @@
+@0
+## 4 NODE
+
+@1
+MOV 0, RIGHT
+
+^:
+  MOV UP, ACC
+
+  JEZ END-SEQ
+
+  MOV ACC, RIGHT
+  JMP ^
+
+END-SEQ:
+  MOV 0, DOWN
+  MOV DOWN, NIL
+  MOV 0, RIGHT
+  JMP ^
+
+@2
+
+
+@3
+
+
+@4
+#SEND SEQ-END SIGN
+MOV UP, RIGHT
+MOV RIGHT, UP
+
+@5
+^:
+  MOV LEFT, NIL
+
+OUTPUT-LOOP:
+  MOV UP, ACC
+  MOV ACC, DOWN
+  JNZ OUTPUT-LOOP
+
+MOV 0, LEFT
+
+@6
+
+
+@7
+MOV ANY, DOWN
+
+@8
