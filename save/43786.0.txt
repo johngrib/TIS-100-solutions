@@ -1,0 +1,49 @@
+@0
+## 4 NODES
+
+@1
+MOV ANY, RIGHT
+
+@2
+^:
+  MOV UP, ACC
+  SWP
+  MOV LEFT, ACC
+  MOV ACC, DOWN
+
+LOOP:
+  JEZ ^
+  SWP
+  MOV ACC, DOWN
+  SWP
+  SUB 1
+  JMP LOOP
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, ACC
+
+LOOP:
+  JEZ END
+  SWP
+  ADD UP
+  SWP
+  SUB 1
+  JMP LOOP
+
+END:
+  SWP
+  MOV ACC, DOWN
+
+@6
+
+
+@7
+MOV ANY, DOWN
+
+@8
